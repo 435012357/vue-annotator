@@ -10,6 +10,15 @@
         padding: 0;
         box-sizing: border-box;
       }
+
+      .hover-line {
+        will-change: transform;
+      }
+
+      .hover-line:hover line {
+
+        transform: scale(1, 1.2);
+      }
     </style>
   </head>
   <body>
@@ -30,7 +39,8 @@
       >
         <g transform="translate(0, 22)">
           <text  fill="currentColor">你好李焕英</text>
-          <g style="cursor: pointer; user-select: none" transform="translate(50, 8)">
+          <g style="cursor: pointer; user-select: none" transform="translate(50, 8)" 
+              class="hover-line">
             <line
               x1="0"
               y1="0"
