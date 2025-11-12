@@ -17,14 +17,17 @@
 
       .hover-line:hover line {
 
-        transform: scale(1, 1.2);
+        transform: scale(1, 1.5);
       }
     </style>
   </head>
   <body>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs><marker id="v-annotator-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" stroke="#74b8dc" fill="#74b8dc"></path></marker></defs></svg>
     <div
       style="
-        width: 100%;
+        margin-left: 100px;
+        width: 1500px;
         height: 500px;
         background: rgba(255, 255, 0, 0.1);
         overflow: hidden;
@@ -34,11 +37,20 @@
       <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        style="height: 74px"
+        style=" width: 100%;"
         direction="ltr"
       >
-        <g transform="translate(0, 22)">
-          <text  fill="currentColor">你好李焕英</text>
+        <g transform="translate(0, 80)">
+
+          <g>
+            <path d="M 63.96702575683594 28
+        v -20
+        A 12 12 0 0 1 75.96702575683594 -4
+        H 1403.3681640625
+        " stroke="#74b8dc" stroke-width="1" fill="none" marker-start="url(#v-annotator-arrow)"></path>
+
+          </g>
+          <text fill="currentColor">贾晓玲睁开眼睛的时候,眼前是1981年的春天。 空气里飘着煤炉的味道,混杂着槐花的香气。她站在化工厂家属院的大门口,看着那些骑着二八大杠自行车的工人们说说笑笑地经过,每个人脸上都洋溢着朴实的笑容。</text>
           <g style="cursor: pointer; user-select: none" transform="translate(50, 8)" 
               class="hover-line">
             <line
@@ -53,6 +65,23 @@
             <g>
                 <circle cx="2.5" cy="1em" r="5" fill="#f0f" />
                 <text x="0" y="1em" dx="15" dy="0.35em" fill="currentColor">实体一</text>
+            </g>
+          </g>
+
+           <g style="cursor: pointer; user-select: none" transform="translate(500, 8)" 
+              class="hover-line">
+            <line
+              x1="0"
+              y1="0"
+              x2="80"
+              y2="0"
+              stroke="#f00"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <g>
+                <circle cx="2.5" cy="1em" r="5" fill="#f0f" />
+                <text x="0" y="1em" dx="15" dy="0.35em" fill="currentColor">实体二</text>
             </g>
           </g>
         </g>
